@@ -9,18 +9,18 @@ public class FirePokemon extends Pokemon{
     }
 
     void fireLash(Pokemon name, Pokemon enemy) {
-
+        Attacks.Attack(name, enemy, "Fire Lash");
     }
 
     void flameThrower(Pokemon name, Pokemon enemy) {
-
+        Attacks.Attack(name, enemy, "Flamethrower");
     }
 
     void pyroBall(Pokemon name, Pokemon enemy) {
-
-    };
+        Attacks.Attack(name, enemy, "Pyroball");
+    }
 
     void inferno(Pokemon name, Pokemon enemy) {
-
-    };
+        Attacks.Attack(name, enemy, "Inferno");
+    }
 }
