@@ -1,5 +1,4 @@
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 // Los in deze klasse alle foutmeldingen op door (abstracte) klassen met variabelen en methodes te maken en een interface met methodes (en soms een import).
 public class PokemonGymImpl implements PokemonGym {
@@ -90,14 +89,14 @@ public class PokemonGymImpl implements PokemonGym {
     @Override
     public Pokemon choosePokemon(PokemonTrainer trainer){
         Scanner speler_A = new Scanner(System.in);
-        List<Pokemon> pokemon = new ArrayList<>();
+        List<Pokemon> pokemonList = new ArrayList<>();
         for (Pokemon p : trainer.getPokemon()) {
             if(p.getHp() > 0 ){
-                pokemon.add(p);
+                pokemonList.add(p);
             }
         }
         System.out.println("Please make your choice of pokemon to attack");
-        for (Pokemon p : pokemon) {
+        for (Pokemon p : pokemonList) {
             System.out.println(p.getName());
         }
         String pokemon = speler_A.nextLine();
